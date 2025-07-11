@@ -3,8 +3,8 @@
 **Building innovative solutions with cutting-edge web technologies and AI/ML**
 
 ## 👥 Team Members
-- **Aman Soni** - Team Leader | Full Stack Developer & AI/ML Engineer
-- **Harshit Jain** - Full Stack Developer & Cloud Solutions Architect
+- **Aman Soni** - Team Leader | Full Stack Developer
+- **Harshit Jain** - Full Stack Developer & AI/ML Engineer
 
 ## 🚀 Our Expertise
 - **Web Development**: Modern full-stack applications with responsive design
