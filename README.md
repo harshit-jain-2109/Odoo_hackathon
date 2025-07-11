@@ -1,10 +1,9 @@
-# Team HashMan - Oddo Hackathon 2025
+# Team HashMan - Odoo Hackathon 2025
 
 **Building innovative solutions with cutting-edge web technologies and AI/ML**
 
 ## 👥 Team Members
 - **Aman Soni** - Team Leader | Full Stack Developer 
-- 
 - **Harshit Jain** - Full Stack Developer & AI/ML Engineer
 
 ## 🚀 Our Expertise
@@ -27,8 +26,8 @@
 ## 📋 Project Setup
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/hashman-oddo-hackathon.git
-cd hashman-oddo-hackathon
+git clone https://github.com/your-username/hashman-odoo-hackathon.git
+cd hashman-odoo-hackathon
 
 # Install dependencies
 npm install
@@ -46,4 +45,4 @@ npm run dev
 *[Live demo link will be added here]*
 
 ---
-*Built with ❤️ by Team HashMan for Oddo Hackathon 2025*
+*Built with ❤️ by Team HashMan for Odoo Hackathon 2025*
