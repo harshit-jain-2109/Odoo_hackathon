@@ -1,6 +1,8 @@
 # Team HashMan - Odoo Hackathon 2025
 
-**Building innovative solutions with cutting-edge web technologies and AI/ML**
+- **Problem Statement - Skill Swap Platform**
+- **Team Name - HashMan**
+- **Email adress - amanoffcial55566@gmail.com, harshitjain3349@gmail.com**
 
 ## 👥 Team Members
 - **Aman Soni** - Team Leader | Full Stack Developer 
