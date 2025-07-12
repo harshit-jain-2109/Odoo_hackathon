@@ -1,0 +1,240 @@
+/* AboutUs.css */
+.content1-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  justify-content: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated bubble background */
+.content1-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(173, 216, 230, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(135, 206, 235, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(176, 224, 230, 0.25) 0%, transparent 50%),
+    radial-gradient(circle at 60% 60%, rgba(173, 216, 230, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 90% 90%, rgba(135, 206, 235, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 10% 10%, rgba(176, 224, 230, 0.2) 0%, transparent 50%);
+  animation: bubble-float 20s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes bubble-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(2deg);
+  }
+  66% {
+    transform: translateY(10px) rotate(-1deg);
+  }
+}
+
+.content-wrapper {
+  max-width: 50vw;
+  margin: 0 60px;
+  z-index: 2;
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: left;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #87CEEB, #B0E0E6);
+  border-radius: 2px;
+}
+
+.description {
+  font-family: 'Montserrat', sans-serif;
+  color: #f0f8ff;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.description.italic {
+  font-style: italic;
+  color: #e6f3ff;
+  font-size: 1.05rem;
+  padding: 20px;
+  background: rgba(173, 216, 230, 0.1);
+  border-radius: 10px;
+  border-left: 4px solid #87CEEB;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.about-image {
+  max-width: 45vw;
+  max-height: 80vh;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.02);
+}
+
+/* Floating bubbles decoration */
+.floating-bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, rgba(173, 216, 230, 0.3), rgba(135, 206, 235, 0.2));
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.bubble-1 {
+  width: 60px;
+  height: 60px;
+  top: 15%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.bubble-2 {
+  width: 80px;
+  height: 80px;
+  top: 60%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.bubble-3 {
+  width: 40px;
+  height: 40px;
+  top: 30%;
+  right: 25%;
+  animation-delay: 4s;
+}
+
+.bubble-4 {
+  width: 100px;
+  height: 100px;
+  bottom: 20%;
+  left: 5%;
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px);
+    opacity: 0.3;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 780px) {
+  .content1-container {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  .content-wrapper {
+    max-width: 90vw;
+    margin: 20px;
+    padding: 30px 20px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .title::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .about-image {
+    max-width: 85vw;
+    max-height: 60vh;
+    margin-bottom: 20px;
+  }
+  
+  .floating-bubble {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .content1-container {
+    padding: 15px 5px;
+  }
+  
+  .content-wrapper {
+    max-width: 95vw;
+    margin: 10px;
+    padding: 20px 15px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+  
+  .description.italic {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}

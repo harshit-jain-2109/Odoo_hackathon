@@ -1,0 +1,211 @@
+.register_page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated bubble background */
+.register_page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.1) 2px, transparent 2px),
+    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    radial-gradient(circle at 40% 40%, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 60% 60%, rgba(255, 255, 255, 0.04) 3px, transparent 3px),
+    radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.05) 2px, transparent 2px),
+    radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 100px 100px, 150px 150px, 200px 200px, 250px 250px, 180px 180px, 120px 120px;
+  animation: floatBubbles 20s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes floatBubbles {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+  50% { 
+    transform: translateY(-20px) rotate(180deg);
+    opacity: 0.8;
+  }
+}
+
+.register_section {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  color: #2d2d2d;
+  min-height: 80vh;
+  width: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.05),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.register_section:hover {
+  transform: translateY(-5px);
+  box-shadow: 
+    0 12px 40px rgba(0, 0, 0, 0.15),
+    0 6px 20px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.previewForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Media query for medium screens */
+@media (max-width: 768px) {
+  .register_section {
+    width: 95%;
+    padding: 20px;
+    min-height: 70vh;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 0 !important;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .register_section {
+    width: 98%;
+    padding: 15px;
+    border-radius: 15px;
+  }
+  
+  .register_page {
+    padding: 10px;
+  }
+}
+
+.previewContainer {
+  font-family: "Montserrat", sans-serif;
+  color: #2d2d2d;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(59, 180, 161, 0.2);
+  transition: all 0.3s ease;
+}
+
+.previewContainer:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.previewItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(59, 180, 161, 0.1);
+  transition: all 0.2s ease;
+}
+
+.previewItem:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.previewItem:hover {
+  background: rgba(59, 180, 161, 0.05);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.previewLabel {
+  flex: 1;
+  font-weight: 600;
+  color: #1e3c72;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.previewValue {
+  flex: 2;
+  margin-left: 20px;
+  color: #2d2d2d;
+  font-weight: 500;
+  padding: 8px 12px;
+  background: rgba(30, 60, 114, 0.05);
+  border-radius: 8px;
+  border-left: 3px solid #3bb4a1;
+}
+
+/* Additional professional styling */
+.register_section h1,
+.register_section h2,
+.register_section h3 {
+  color: #1e3c72;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.register_section input,
+.register_section select,
+.register_section textarea {
+  border: 2px solid rgba(30, 60, 114, 0.2);
+  border-radius: 10px;
+  padding: 12px 15px;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.register_section input:focus,
+.register_section select:focus,
+.register_section textarea:focus {
+  outline: none;
+  border-color: #3bb4a1;
+  box-shadow: 0 0 0 3px rgba(59, 180, 161, 0.2);
+  background: rgba(255, 255, 255, 1);
+}
+
+.register_section button {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(30, 60, 114, 0.3);
+}
+
+.register_section button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(30, 60, 114, 0.4);
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+}
