@@ -1,7 +1,7 @@
 # Team HashMan - Odoo Hackathon 2025
 
 - **Problem Statement - Skill Swap Platform**
-- **Team Name - HashMan**
+- **Team Name - HASHMAN**
 - **Email adress - amanoffcial55566@gmail.com, harshitjain3349@gmail.com**
 
 ## 👥 Team Members
