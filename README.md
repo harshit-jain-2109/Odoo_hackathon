@@ -3,6 +3,7 @@
 - **Problem Statement - Skillify Platform**
 - **Team Name - HashMan**
 - **Email adress - amanoffcial55566@gmail.com, harshitjain3349@gmail.com**
+- - **Video Link - https://drive.google.com/file/d/1RdlOgMubMi4eie3U4eLC-j_xIeQb_pzE/view?usp=sharing**
 
 ## 👥 Team Members
 - **Aman Soni** - Team Leader | Full Stack Developer 
