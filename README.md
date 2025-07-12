@@ -43,8 +43,6 @@ npm run dev
 - [ ] Feature 2
 - [ ] Feature 3
 
-## 📱 Demo
-*[Live demo link will be added here]*
 
 ---
-*Built with ❤️ by Team HashMan for Odoo Hackathon 2025*
+*Built with ❤️ by Team HASHMAN for Odoo Hackathon 2025*
